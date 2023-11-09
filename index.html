@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography by GGDEVS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          darkMode: "class",
+          extend: {
+            container: {
+              center: true,
+              padding: "1rem"
+            },
+            fontFamily: {
+              sans: ["chillax", "sans-serif"],
+              synonym: ["synonym", "sans-serif"]
+            },
+            colors: {
+              darkBlue: "#032957",
+              orange: "#FF6141"
+            },
+            backgroundImage: {
+              hero: "radial-gradient(100% 100% at 50% 0%, #000409 0%, rgba(1, 8, 17, 0.00) 100%);"
+            }
+          }
+        }
+      };
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "chillax";
+        font-display: swap;
+        src: url("./chillax/Chillax-Variable.ttf");
+        font-weight: 100 900;
+      }
+      @font-face {
+        font-family: "synonym";
+        font-display: swap;
+        src: url("./synonym/Synonym-Regular.ttf");
+        font-weight: 100 900;
+      }
+      .scrollbar-hide {
+        scrollbar-width: none;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      .c-shadow {
+        box-shadow: 1px 1px 10px 0px #021934, inset 4px 4px 5px 0px #000409,
+          inset -4px -4px 5px 0px #000409;
+      }
+      .clip-start {
+        clip-path: polygon(0 100%, 0 100%, 0 100%, 0% 100%);
+      }
+      .clip-none {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      }
+      .cubic {
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      body {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <div class="">
+        <header
+          class="bg-transparent absolute left-0 top-0 z-50 w-full py-8 bg-gradient-to-b from-black/20 to-transparent text-white"
+        >
+          <div class="container">
+            <div class="flex justify-between items-center">
+              <div>
+                <a
+                  href="/"
+                  class="font-synonym font-bold uppercase antialiased text-2xl font-bold"
+                >
+                  Fine Arts
+                </a>
+              </div>
+              <div>
+                <ul class="flex justify-center items-center gap-2">
+                  <li>
+                    <a
+                      class="text-current text-xl uppercase font-synonym font-normal py-2 px-4 block"
+                      href=""
+                    >
+                      The work
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="text-current text-xl uppercase font-synonym font-normal py-2 px-4 block"
+                      href=""
+                    >
+                      The Artist
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-current text-xl uppercase font-synonym font-normal py-2 px-4 block"
+                      href=""
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex justify-center items-center gap-2">
+                  <li>
+                    <button
+                      class="text-current text-xl uppercase font-synonym font-normal py-2 px-4 block"
+                    >
+                      <!-- <span>
+                        <svg
+                          class="w-6 h-6 text-current"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="6"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                          />
+                        </svg>
+                      </span> -->
+                      Booking
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="w-full h-screen">
+            <div class="grid grid-cols-2 h-full">
+              <div class="bg-gray-200 grid place-items-center text-gray-800">
+                <div>
+                  <span class="font-bold uppercase antialiased font-synonym">
+                    Senior Photographer
+                  </span>
+                  <h1 class="text-6xl font-light font-synonym mb-8">
+                    Peter Lik
+                  </h1>
+                  <p class="max-w-[400px] font-sans text-sm font-light">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged.
+                  </p>
+                </div>
+              </div>
+              <div class="h-screen">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/kidjo-photography-45-sur-226.jpg"
+                  alt=""
+                  class="w-full h-full object-cover object-top grayscale"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full h-screen">
+            <div
+              class="h-full flex items-center justify-top gap-8 flex-col text-gray-200 pt-16 font-light"
+              style="
+                background-image: url(https://www.kidjophotography.com/wp-content/uploads/2023/06/S8A7513-scaled.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                filter: grayscale(100%);
+              "
+            >
+              <p class="max-w-[400px] font-sans text-base">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+              </p>
+              <p class="max-w-[400px] font-sans text-base">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book. It has survived
+                not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+          </div>
+          <div class="w-full min-h-screen">
+            <div
+              class="h-full w-full bg-gray-200 flex flex-col gap-8 justify-center items-center py-16 font-light text-gray-800"
+            >
+              <div>
+                <p class="max-w-[600px] font-sans text-base">
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived
+                  not only five centuries, but also the leap into electronic
+                  typesetting, remaining essentially unchanged.
+                </p>
+              </div>
+              <div class="max-w-4xl mx-auto relative">
+                <img
+                  class="grayscale w-full h-full object-cover object-top"
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/S8A0544-scaled.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="max-w-[600px] font-sans text-base">
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived
+                  not only five centuries, but also the leap into electronic
+                  typesetting, remaining essentially unchanged.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="h-screen w-full">
+            <div
+              class="h-full w-full relative"
+              style="
+                background-image: url(https://www.kidjophotography.com/wp-content/uploads/2023/06/sans-titre-91-sur-152-scaled.jpg);
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                filter: grayscale(100%);
+              "
+            >
+              <div
+                class="relative md:absolute w-96 top-1/2 right-12 -translate-y-1/2"
+                style="filter: grayscale(0)"
+              >
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/kidjo-photography-93-sur-226-scaled.jpg"
+                  class="h-full w-full object-cover object-top"
+                  alt=""
+                />
+              </div>
+              <div class="container flex items-center h-full">
+                <div class="text-gray-200">
+                  <span class="font-bold uppercase antialiased font-synonym">
+                    Making events memorable
+                  </span>
+                  <h1 class="text-6xl font-light font-synonym mb-8">
+                    Wedding Photography
+                  </h1>
+                  <p class="max-w-[400px] font-sans text-sm font-light">
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of
+                    type and scrambled it to make a type specimen book. It has
+                    survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="h-screen w-screen flex items-center justify-center">
+            <div
+              class="h-full w-full grid grid-cols-2 md:grid-cols-4 grid-rows-2"
+            >
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/sans-titre-13-sur-43-scaled.jpg"
+                  class="h-full w-full object-cover object-center grayscale group-hover:grayscale-0 cubic"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Produits
+                </div>
+              </a>
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/sans-titre-138-sur-152-scaled.jpg"
+                  class="h-full w-full object-cover object-center grayscale group-hover:grayscale-0"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Mode
+                </div>
+              </a>
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/S8A0139_147703860057667-scaled.jpg"
+                  class="h-full w-full object-cover object-center grayscale hover:grayscale-0"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Concept
+                </div>
+              </a>
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/sans-titre-4-sur-43-2-scaled.jpg"
+                  class="h-full w-full object-cover object-center grayscale hover:grayscale-0"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Portrait
+                </div>
+              </a>
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/kidjo-photography-214-sur-226-scaled.jpg"
+                  class="h-full w-full object-cover object-center grayscale hover:grayscale-0"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Tropic
+                </div>
+              </a>
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/kidjo-photography-64-sur-226-scaled.jpg"
+                  class="h-full w-full object-cover object-center grayscale hover:grayscale-0"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Corporate
+                </div>
+              </a>
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/kidjo-photography-14-sur-226.jpg"
+                  class="h-full w-full object-cover object-center grayscale hover:grayscale-0"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Events
+                </div>
+              </a>
+              <a href="#" class="block cursor-pointer relative group">
+                <img
+                  src="https://www.kidjophotography.com/wp-content/uploads/2023/06/sans-titre-29-sur-152-scaled.jpg"
+                  class="h-full w-full object-cover object-center grayscale hover:grayscale-0"
+                  alt=""
+                />
+                <div
+                  class="absolute top-0 left-0 h-full w-full bg-black/80 clip-start cubic flex items-center justify-center text-gray-200 font-light"
+                >
+                  Marriage
+                </div>
+              </a>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="h-screen w-screen bg-gray-200 text-gray-200 relative"
+          style="
+            background-image: url(https://www.kidjophotography.com/wp-content/uploads/2023/06/banniere-portrait-kidjo-photography-scaled.jpeg);
+            background-size: cover;
+          "
+        >
+          <div
+            class="overlay absolute top-0 left-0 w-full h-full bg-black/90 z-10"
+          ></div>
+          <div class="container h-full relative z-20">
+            <div class="h-full w-full flex flex-col justify-between">
+              <div class="flex-1 w-full py-16">
+                <div>
+                  <a href="/" class="text-5xl font-light uppercase antialiased"
+                    >Fine Arts</a
+                  >
+                  <div class="grid grid-cols-2">
+                    <div></div>
+                    <div>
+                      <h2 class="mb-4">Parlons de votre projet</h2>
+                      <form
+                        action=""
+                        class="flex flex-col gap-8 p-4 border border-gray-200/10 rounded-md font-light"
+                      >
+                        <div class="flex flex-row gap-2 w-full">
+                          <div class="relative basis-1/2">
+                            <label for="name">Nom</label>
+                            <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              class="h-[50px] w-full bg-transparent border-b border-gray-200/10 focus:outline-none px-2"
+                            />
+                          </div>
+                          <div class="relative basis-1/2">
+                            <label for="email">Email</label>
+                            <input
+                              type="text"
+                              id="email"
+                              name="email"
+                              class="h-[50px] w-full bg-transparent border-b border-gray-200/10 focus:outline-none px-2"
+                            />
+                          </div>
+                        </div>
+                        <div class="w-full">
+                          <label for="message"></label>
+                          <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            class="w-full bg-transparent border border-gray-200/10 p-2 focus:outline-none"
+                          ></textarea>
+                        </div>
+                        <div class="w-full text-center">
+                          <button
+                            class="px-12 py-3 border border-gray-200/10 rounded-md bg-gray-200 text-gray-800"
+                            type="submit"
+                          >
+                            Envoyer
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <p class="text-center font-thin text-xs py-2">
+                  &copy; 2023 fine arts. All rights reserved. Developed by
+                  <a href="https://ggdevs.com" class="">GGDEVS</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      const categories = document.querySelectorAll("a.group");
+      categories.forEach(category => {
+        const div = category.querySelector("div");
+        category.addEventListener("mouseenter", () => {
+          div.classList.add("clip-none");
+          div.classList.remove("clip-start");
+        });
+        category.addEventListener("mouseleave", () => {
+          div.classList.add("clip-start");
+          div.classList.remove("clip-none");
+        });
+      });
+    </script>
+  </body>
+</html>
