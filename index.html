@@ -144,10 +144,14 @@
           </div>
         </header>
         <main>
-          <div class="w-full h-screen">
-            <div class="grid grid-cols-2 h-full">
-              <div class="bg-gray-200 grid place-items-center text-gray-800">
-                <div>
+          <div class="w-full lg:h-screen">
+            <div
+              class="grid grid-cols-1 grid-roww-2 lg:grid-rows-1 lg:grid-cols-2 h-full"
+            >
+              <div
+                class="bg-gray-200 relative z-20 grid place-items-center text-gray-800"
+              >
+                <div class="py-16 lg:py-0 px-8">
                   <span class="font-bold uppercase antialiased font-synonym">
                     Senior Photographer
                   </span>
@@ -163,7 +167,7 @@
                   </p>
                 </div>
               </div>
-              <div class="h-screen">
+              <div class="z-10 relative lg:h-screen">
                 <img
                   loading="lazy"
                   src="https://images.pexels.com/photos/3620411/pexels-photo-3620411.jpeg"
@@ -174,9 +178,9 @@
             </div>
           </div>
 
-          <div class="w-full h-screen">
+          <div class="w-full lg:h-screen">
             <div
-              class="h-full flex items-center justify-top gap-8 flex-col text-gray-200 pt-16 font-light"
+              class="h-full flex items-center justify-top gap-8 flex-col text-gray-200 py-16 lg:py-0 px-8 lg:pt-16 font-light"
               style="
                 background-image: url(https://images.pexels.com/photos/720360/pexels-photo-720360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
                 background-size: cover;
@@ -186,14 +190,14 @@
                 filter: grayscale(100%);
               "
             >
-              <p class="max-w-[400px] font-sans text-base">
+              <p class="max-w-[400px] font-sans text-sm md:text-base">
                 Lorem Ipsum has been the industry's standard dummy text ever
                 since the 1500s, when an unknown printer took a galley of type
                 and scrambled it to make a type specimen book. It has survived
                 not only five centuries, but also the leap into electronic
                 typesetting, remaining essentially unchanged.
               </p>
-              <p class="max-w-[400px] font-sans text-base">
+              <p class="max-w-[400px] font-sans text-sm md:text-base">
                 Lorem Ipsum has been the industry's standard dummy text ever
                 since the 1500s, when an unknown printer took a galley of type
                 and scrambled it to make a type specimen book. It has survived
@@ -202,12 +206,12 @@
               </p>
             </div>
           </div>
-          <div class="w-full min-h-screen">
+          <div class="w-full lg:min-h-screen">
             <div
               class="h-full w-full bg-gray-200 flex flex-col gap-8 justify-center items-center py-16 font-light text-gray-800"
             >
-              <div>
-                <p class="max-w-[600px] font-sans text-base">
+              <div class="px-8">
+                <p class="max-w-[400px] font-sans text-sm md:text-base">
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s, when an unknown printer took a galley of type
                   and scrambled it to make a type specimen book. It has survived
@@ -223,8 +227,8 @@
                   alt=""
                 />
               </div>
-              <div>
-                <p class="max-w-[600px] font-sans text-base">
+              <div class="px-8">
+                <p class="max-w-[400px] font-sans text-sm md:text-base">
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s, when an unknown printer took a galley of type
                   and scrambled it to make a type specimen book. It has survived
@@ -391,7 +395,7 @@
           </div>
         </main>
         <footer
-          class="h-screen w-screen bg-gray-200 text-gray-200 relative"
+          class="w-screen bg-gray-200 text-gray-200 relative"
           style="
             background-image: url(https://images.pexels.com/photos/3884088/pexels-photo-3884088.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
             background-size: cover;
@@ -409,8 +413,8 @@
                   <a href="/" class="text-5xl font-light uppercase antialiased"
                     >Fine Arts</a
                   >
-                  <div class="grid grid-cols-2 gap-4">
-                    <div class="py-8 flex flex-col gap-8">
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="py-8 order-2 lg:order-1 flex flex-col gap-8">
                       <div class="grid grid-cols-4 gap-y-8 w-1/2 text-gray-200">
                         <a href="">Mode</a>
                         <a href="">Concept</a>
@@ -429,11 +433,11 @@
                           <li>
                             <a
                               href=""
-                              class="h-20 w-20 rounded-full border block grid place-items-center"
+                              class="h-16 w-16 lg:h-20 lg:w-20 p-4 rounded-full border block grid place-items-center"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-tiktok-filled"
+                                class="w-full h-full"
                                 width="48"
                                 height="48"
                                 viewBox="0 0 24 24"
@@ -459,11 +463,11 @@
                           <li>
                             <a
                               href=""
-                              class="h-20 w-20 rounded-full border block grid place-items-center"
+                              class="h-16 w-16 lg:h-20 lg:w-20 p-4 rounded-full border block grid place-items-center"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-instagram"
+                                class="w-full h-full"
                                 width="48"
                                 height="48"
                                 viewBox="0 0 24 24"
@@ -491,11 +495,11 @@
                           <li>
                             <a
                               href=""
-                              class="h-20 w-20 rounded-full border block grid place-items-center"
+                              class="h-16 w-16 lg:h-20 lg:w-20 p-4 rounded-full border block grid place-items-center"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-youtube-filled"
+                                class="w-full h-full"
                                 width="48"
                                 height="48"
                                 viewBox="0 0 24 24"
@@ -521,11 +525,11 @@
                           <li>
                             <a
                               href=""
-                              class="h-20 w-20 rounded-full border block grid place-items-center"
+                              class="h-16 w-16 lg:h-20 lg:w-20 p-4 rounded-full border block grid place-items-center"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-snapchat"
+                                class="w-full h-full icon-tabler-brand-snapchat"
                                 width="48"
                                 height="48"
                                 viewBox="0 0 24 24"
@@ -549,11 +553,11 @@
                           <li>
                             <a
                               href=""
-                              class="h-20 w-20 rounded-full border block grid place-items-center"
+                              class="h-16 w-16 lg:h-20 lg:w-20 p-4 rounded-full border block grid place-items-center"
                             >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="icon icon-tabler icon-tabler-brand-facebook-filled"
+                                class="w-full h-full"
                                 width="48"
                                 height="48"
                                 viewBox="0 0 24 24"
@@ -590,7 +594,7 @@
                         essentially unchanged.
                       </p>
                     </div>
-                    <div>
+                    <div class="order-1 lg:order-2">
                       <h2 class="mb-4">Parlons de votre projet</h2>
                       <form
                         action=""
@@ -603,7 +607,7 @@
                               type="text"
                               id="name"
                               name="name"
-                              class="h-[50px] w-full bg-transparent border-b border-gray-200/10 focus:outline-none px-2"
+                              class="h-[50px] w-full bg-transparent border-b border-gray-200/20 focus:outline-none px-2"
                             />
                           </div>
                           <div class="relative basis-1/2">
@@ -612,7 +616,7 @@
                               type="text"
                               id="email"
                               name="email"
-                              class="h-[50px] w-full bg-transparent border-b border-gray-200/10 focus:outline-none px-2"
+                              class="h-[50px] w-full bg-transparent border-b border-gray-200/20 focus:outline-none px-2"
                             />
                           </div>
                         </div>
@@ -623,12 +627,12 @@
                             id="message"
                             cols="30"
                             rows="10"
-                            class="w-full bg-transparent border border-gray-200/10 p-2 focus:outline-none"
+                            class="w-full bg-transparent border border-gray-200/20 p-2 focus:outline-none"
                           ></textarea>
                         </div>
                         <div class="w-full text-center">
                           <button
-                            class="px-12 py-3 border border-gray-200/10 rounded-md bg-gray-200 text-gray-800"
+                            class="px-12 py-3 border border-gray-200/20 rounded-md bg-gray-200 text-gray-800"
                             type="submit"
                           >
                             Envoyer
@@ -639,7 +643,7 @@
                   </div>
                 </div>
               </div>
-              <div class="">
+              <div class="mt-auto justify-self-end container">
                 <p class="text-center font-thin text-xs py-2">
                   &copy; 2023 fine arts. All rights reserved. Developed by
                   <a href="https://ggdevs.com" class="">GGDEVS</a>
